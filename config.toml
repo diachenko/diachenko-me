@@ -1,3 +1,98 @@
-baseURL = "https://diachenko.me/"
-languageCode = "en-us"
-title = "Alexandr diachenko"
+baseurl = "https://diachenko.me"
+title = "Alexandr Diachenko"
+
+theme = "hugo-coder"
+
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+
+[params]
+    author = "Alexandr Diachenko"
+    description = "Product manager @ xChangePlus"
+    keywords = "blog,developer,personal"
+    info = "Product manager @ xChangePlus"
+    avatarurl = "images/avatar.jpg"
+    footercontent = ""
+
+    dateformat = "January 2, 2006"
+
+    hideCredits = false
+    hideCopyright = false
+    since = 2019
+
+    # Git Commit in Footer, uncomment the line below to enable it.
+    commit = "https://github.com/diachenko/diachenko.me/"
+
+    rtl = false
+
+    # Specify light/dark colorscheme
+    # Supported values:
+    # "auto" (use preference set by browser)
+    # "dark" (dark background, light foreground)
+    # "light" (light background, dark foreground) (default)
+    colorscheme = "light"
+
+    # Series see also post count
+    maxSeeAlsoItems = 5
+
+    # Custom CSS
+    custom_css = []
+    
+    # Custom JS
+    custom_js = []
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github"
+    weight = 1
+    url = "https://github.com/diachenko/"
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter"
+    weight = 2
+    url = "https://twitter.com/diachenko_alex"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin"
+    weight = 3
+    url = "https://www.linkedin.com/in/alexandr-diachenko-0647b478/"
+[[params.social]]
+    name = "Telegram"
+    icon = "fab fa-telegram"
+    weight = 4
+    url = "https://t.me/a_diachenko"
+
+
+[languages]
+    [languages.en]
+        languagename = "English"
+
+        [languages.en.menu]
+
+            [[languages.en.menu.main]]
+            name = "About"
+            weight = 1
+            url = "about/"
+
+            [[languages.en.menu.main]]
+            name = "Blog"
+            weight = 2
+            url = "posts/"
+
+            [[languages.en.menu.main]]
+            name = "CV"
+            weight = 3
+            url = "projects/"
